@@ -1,4 +1,4 @@
-# Answer:
+# Answer: megsdlpulxvinkatfoyzxcbvq
 # Assumes all strings are equal length
 
 file = open ("2aInput.txt", "r")
