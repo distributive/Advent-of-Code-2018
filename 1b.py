@@ -28,3 +28,4 @@ while running:
             freqs[i] += netGain
     count += 1
 
+file.close ()
