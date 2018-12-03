@@ -1,6 +1,6 @@
 # Answer: 538
 
-file = open ("1aInput.txt", "r")
+file = open ("1.txt", "r")
 
 freq = 0
 

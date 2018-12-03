@@ -1,7 +1,7 @@
 # Answer: megsdlpulxvinkatfoyzxcbvq
 # Assumes all strings are equal length
 
-file = open ("2aInput.txt", "r")
+file = open ("2.txt", "r")
 
 lines = []
 

@@ -1,6 +1,6 @@
 # Answer: 5456
 
-file = open ("2aInput.txt")
+file = open ("2.txt")
 
 twos = 0
 threes = 0
