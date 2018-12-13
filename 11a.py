@@ -21,4 +21,3 @@ for x in range (0, 298):
             maxCoords = (x+1, y+1)
 
 print (str (maxCoords[0]) + "," + str (maxCoords[1]))
-

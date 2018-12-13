@@ -1,6 +1,6 @@
-#Answer: 11946
+# Answer: 11946
 
-file = open ("5.txt")
+file = open ("05.txt")
 
 line = file.readline ()
 file.close ()

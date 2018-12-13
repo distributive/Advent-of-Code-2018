@@ -1,8 +1,8 @@
-#Answer: BCEFLDMQTXHZGKIASVJYORPUWN
+# Answer: BCEFLDMQTXHZGKIASVJYORPUWN
 
 import re
 
-file = open ("7.txt")
+file = open ("07.txt")
 
 # Record steps
 steps = {}

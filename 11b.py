@@ -1,4 +1,4 @@
-# Answer: 243,34
+# Answer: 90,214,15
 # Assumes the serial number (puzzle input) will be positive
 
 import math
@@ -22,4 +22,3 @@ for size in range (1, 301):
                 maxCoords = (x+1, y+1, size)
 
 print (str (maxCoords[0]) + "," + str (maxCoords[1]) + "," + str (maxCoords[2]))
-

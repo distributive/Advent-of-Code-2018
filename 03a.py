@@ -1,8 +1,8 @@
-#Answer: 1124
+# Answer: 119551
 
 import re
 
-file = open ("3.txt")
+file = open ("03.txt")
 
 # Convert raw data
 data = []
@@ -28,26 +28,14 @@ for x in range (xMax):
         column.append (0)
     sheet.append (column)
 
-# Apply the claims
+# Count overlapping squares
+overlaps = 0
 for line in data:
     for x in range (line[0], line[0] + line[2]):
         for y in range (line[1], line[1] + line[3]):
             sheet[x][y] += 1
+            if sheet[x][y] == 2:
+                overlaps += 1
 
-# Find the claim for which every square inch has exactly 1 use
-i = 0
-for line in data:
-    i += 1
-    valid = True
-    for x in range (line[0], line[0] + line[2]):
-        for y in range (line[1], line[1] + line[3]):
-            if sheet[x][y] != 1:
-                valid = False;
-                break;
-        if not valid:
-            break;
-    if valid:
-        print (i)
-        break;
-
+print (overlaps)
 file.close ()

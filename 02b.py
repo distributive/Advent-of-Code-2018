@@ -1,7 +1,7 @@
 # Answer: megsdlpulxvinkatfoyzxcbvq
 # Assumes all strings are equal length
 
-file = open ("2.txt", "r")
+file = open ("02.txt")
 
 lines = []
 
@@ -19,7 +19,7 @@ for i in range (len (lines)):
         if errors == 1:
             s = ""
             for k in range (len (lines[i])):
-                if lines[i][k] == lines[j][k]:
+                if lines[i][k] == lines[j][k] and lines[i][k] != "\n":
                     s += lines[i][k]
             print (s)
 

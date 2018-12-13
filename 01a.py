@@ -1,6 +1,6 @@
 # Answer: 538
 
-file = open ("1.txt", "r")
+file = open ("01.txt")
 
 freq = 0
 
@@ -9,4 +9,3 @@ for line in file:
 
 print (freq)
 file.close ()
-

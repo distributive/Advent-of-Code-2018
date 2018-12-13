@@ -62,6 +62,7 @@ while not collision:
         if collision:
             break
 
+##    # Draw state of the track
 ##    s = ""
 ##    for y in range (len (grid)):
 ##        for x in range (len (grid[y])):

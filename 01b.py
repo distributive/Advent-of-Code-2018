@@ -1,7 +1,7 @@
 # Answer: 77271
 # Relies on the assumption that the net frequency over a single iteration is positive
 
-file = open ("1.txt", "r")
+file = open ("01.txt")
 
 low = 0
 

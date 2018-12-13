@@ -1,6 +1,6 @@
-#Answer: 34466
+# Answer: 34466
 
-file = open ("8.txt")
+file = open ("08.txt")
 
 line = list (map (int, list (file.readline ().split (" "))))
 

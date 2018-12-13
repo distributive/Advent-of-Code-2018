@@ -1,8 +1,8 @@
-#Answer: 42250
+# Answer: 42250
 
 import math
 
-file = open ("6.txt")
+file = open ("06.txt")
 
 # Get data
 points = {}

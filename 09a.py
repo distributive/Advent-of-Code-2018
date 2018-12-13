@@ -2,7 +2,7 @@
 
 import re
 
-file = open ("9.txt")
+file = open ("09.txt")
 line = file.readline ()
 
 playerCount = int (re.search ("\d*(?= pl)", line).group ())

@@ -1,8 +1,8 @@
-#Answer: 4716
+# Answer: 117061
 
 import re
 
-file = open ("4.txt")
+file = open ("04.txt")
 
 # Sort data
 data = []
@@ -31,14 +31,15 @@ for line in data:
             for i in range (start, minute):
                 shifts[guard][i] += 1
             
-# Find the guard with the most sleep time
+# Find the minute each guard slept the most
+# Find the largest such value across all guards
 maxValue = 0
 maxGuard = -1
 
 for guard in shifts.keys ():
-    if sum (shifts[guard]) > maxValue:
+    if max (shifts[guard]) > maxValue:
         maxGuard = guard
-        maxValue = sum (shifts[guard])
+        maxValue = max (shifts[guard])
 
 print (maxGuard * shifts[maxGuard].index (max (shifts[maxGuard])))
 file.close ()

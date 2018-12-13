@@ -38,7 +38,7 @@ while True:
     if newGridRange < gridRange:
         gridRange = newGridRange
     else:
-        print ("Time t = " + str (t-1))
+        print (t-1)
         break
     t += 1
 

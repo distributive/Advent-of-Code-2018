@@ -1,4 +1,4 @@
-#Answer: 987
+# Answer: 987
 
 import re
 
