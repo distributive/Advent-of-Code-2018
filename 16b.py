@@ -126,6 +126,8 @@ while True:
         if any (map (lambda x : len (x) > 1, possibilities)):
             for i in range (len (possibilities)):
                 if len (possibilities[i]) > 1:
+                    # Guess which opcode ambiguous cases resolve to
+                    # This method works for the given input (opcodes 2 and 3 have to be guessed)
                     possibilities[i] = possibilities[i][0:1]
                     break
         else:
@@ -134,7 +136,7 @@ while True:
 # Run program
 reg = [0]*4
 for cmd in program:
-    operation = possibilities[cmd[0]][-1]
+    operation = possibilities[cmd[0]][0]
     if (len (possibilities[cmd[0]]) > 1):
         print (cmd)
     
